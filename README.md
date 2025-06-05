@@ -19,6 +19,30 @@ A basic C++ program that:
 
 **Run it:**
 ```bash
-cd fibo
+cd fibo/'Prog 0' 
 c++ fibo.cpp
 ./a.out
+
+### 🔹 `One Card War`  
+A C++ program that simulates a simple card game where two players compete over 26 rounds. The program:
+
+- Initializes and displays a standard deck of cards  
+- Shuffles the deck before gameplay  
+- Prompts for two player names  
+- Deals one card to each player per round and compares their values  
+- Tracks wins, losses, and ties for each player  
+- Displays the final results after all rounds  
+
+**Files:**  
+- `Deck.h` — Declaration of the `Deck` class managing a collection of cards
+- `Deck.cpp` — Implementation of the `Deck` class functions including shuffle and deal
+- `Card.h` — Declaration of the `Card` class representing individual playing cards
+- `Card.cpp` — Implementation of the `Card` class functions including comparison and display
+- `main.cpp` — Contains the game logic and user interaction for the One Card War game
+- `war` - Compiled binary
+
+**Run it:**  
+```bash
+cd 'One Card War'/'Prog 1'
+c++ Deck.cpp Card.cpp main.cpp -o war
+./war
