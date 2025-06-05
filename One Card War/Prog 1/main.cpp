@@ -1,7 +1,3 @@
-// Author: Krrish Kohli
-// CECS 325-01 Prog 1
-// Due 06/04/2025
-
 #include <iostream>
 #include <string>
 #include <cstdlib>

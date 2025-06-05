@@ -1,9 +1,5 @@
-// Author: Krrish Kohli
-// CECS 325-01 Prog 0
-// Due 05/30/2025
-
 #include <iostream> // library for cin, cout
-# include <string>
+#include <string>
 
 using namespace std; // allows shortcuts
 
