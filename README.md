@@ -70,3 +70,38 @@ cd Solitaire/'Prog 2'
 c++ Solitaire.cpp -o solitaire
 ./solitaire
 ```
+
+### 🔹 `Sort Contest`  
+A C++ project that benchmarks a custom bubble sort implementation against the system's built-in sort using 1,000,000 randomly generated integers. The program:
+
+- Generates a large set of random numbers using command-line arguments
+- Sorts the data using both system sort and a custom bubble sort
+- Logs execution time, verifies sort correctness, and stores results
+
+**Files:**  
+- `generate.cpp` — Generates random numbers between a given min and max and writes them to `numbers.dat`  
+- `generate` — Executable for generating the data  
+- `mysort.cpp` — Reads numbers from `numbers.dat`, sorts them using bubble sort, and writes to `mysort.out`  
+- `mysort` — Executable for running the bubble sort  
+- `sortrace.sh` — Shell script to automate the full benchmark process  
+- `sortrace.log` — Log file recording the runtime and performance output  
+- `numbers.dat` — Input file containing the generated random numbers  
+- `mysort.out` — Output file containing numbers sorted by your bubble sort  
+- `systemsort.out` — Output file from the system's built-in `sort` command  
+
+**Run it:**
+```bash
+# Step 1: Compile the C++ programs
+c++ generate.cpp -o generate
+c++ mysort.cpp -o mysort
+
+# Step 2: Give execute permission to the script
+chmod +x sortrace.sh
+
+# Step 3: Remove old log file (optional but recommended)
+rm sortrace.log
+
+# Step 4: Run the sort contest (as a background task)
+./sortrace.sh >> sortrace.log &
+```
+
