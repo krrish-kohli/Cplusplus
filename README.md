@@ -48,3 +48,25 @@ A C++ program that simulates a simple card game where two players compete over 2
 cd 'One Card War'/'Prog 1'
 c++ Deck.cpp Card.cpp main.cpp -o war
 ./war
+```
+
+
+### 🔹 `Solitaire`  
+A C++ program that simulates **Fibonacci Solitaire**, a card game where cards are dealt into piles, and each pile must sum to a Fibonacci number to continue the game. The program includes a menu with multiple gameplay options.
+
+**Features:**
+- Generates a new standard 52-card deck
+- Shuffles and displays the deck
+- Plays a game of Fibonacci Solitaire by dealing cards into Fibonacci-sum piles
+- Simulates automatic games until a win is found
+- Determines if a number is Fibonacci using a recursive check
+
+**Files:**
+- `Solitaire.cpp` — Contains full implementation of the `Card` and `Deck` classes, Fibonacci checking logic, and game loop
+
+**Run it:**
+```bash
+cd Solitaire/'Prog 2'
+c++ Solitaire.cpp -o solitaire
+./solitaire
+```
