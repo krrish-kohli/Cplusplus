@@ -92,6 +92,7 @@ A C++ project that benchmarks a custom bubble sort implementation against the sy
 **Run it:**
 ```bash
 # Step 1: Compile the C++ programs
+cd 'Sort Contest'/'Prog 3'
 c++ generate.cpp -o generate
 c++ mysort.cpp -o mysort
 
