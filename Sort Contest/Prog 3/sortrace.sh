@@ -3,7 +3,7 @@
 # run it as a background task like this: (see the 2 lines below)
 #----------------------------------------------------------------------------------------------
 # $ rm sortrace.log # start with fresh log file
-# $ sortrace.sh >> sortrace.log & # this may take an hour
+# $ ./sortrace.sh >> sortrace.log & # this may take an hour
 #----------------------------------------------------------------------------------------------
 #
 echo Generating 1000000 random numbers

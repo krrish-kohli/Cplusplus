@@ -1,2 +1,19 @@
+Generating 1000000 random numbers
+argv[0]:./generate
+argv[1]:1000000
+argv[2]:-100000
+argv[3]:100000
+1000000 numbers being generated between -100000 and 100000
+Starting system sort
+
+real	0m1.190s
+user	0m1.153s
+sys	0m0.029s
+Starting mysort
 Starting bubble sort with 1000000 numbers
 Finished bubble sort
+
+real	60m41.012s
+user	60m27.841s
+sys	0m10.006s
+ 1000000 1000000 6389810 mysort.out
