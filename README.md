@@ -108,7 +108,7 @@ rm sortrace.log
 ```
 
 
-### 🔹 `Sort Contest (With Threads)`  ### 🔹 `Sort Contest (With Threads)`  
+### 🔹 `Sort Contest (With Threads)`  
 A C++ program that benchmarks a **multithreaded bubble sort** against the system's built-in sort using 1,000,000 randomly generated integers. The program:
 
 - Generates a large set of random numbers using command-line arguments  
@@ -144,39 +144,5 @@ rm sortrace.log
 
 # Step 4: Run the sort contest
 ./sortrace.sh >> sortrace.log &
+```
 
-A C++ program that benchmarks a **multithreaded bubble sort** against the system's built-in sort using 1,000,000 randomly generated integers. The program:
-
-- Generates a large set of random numbers using command-line arguments  
-- Uses 16 threads to sort the data in parallel using bubble sort  
-- Merges sorted chunks into a final, completely sorted array  
-- Logs the number of swaps performed by each thread  
-- Compares output against system sort for correctness  
-- Logs all execution details to a file for analysis
-
-**Files:**  
-- `generate.cpp` — Generates `numbers.dat` with random numbers between a given min and max
-- `generate` — Executable for generating the data
-- `mysort.cpp` — Reads numbers from `numbers.dat`, sorts them using multithreaded bubble sort, and writes to `mysort.out`
-- `mysort` — Executable for running the threaded bubble sort
-- `numbers.dat` — Input file containing the generated random numbers
-- `mysort.out` — Output file containing numbers sorted by your threaded sort
-- `systemsort.out` — Output file from the system’s built-in `sort` command
-- `sortrace.sh` — Shell script to automate compilation, sorting, timing, and verification
-- `sortrace.log` — Log file recording the runtime, swap counts, and comparison results
-
-**Run it:**  
-```bash
-# Step 1: Compile the C++ programs
-cd 'Sort Contest (With Threads)'/'Prog 4'
-c++ generate.cpp -o generate
-c++ mysort.cpp -pthread -o mysort
-
-# Step 2: Give execute permission to the script
-chmod +x sortrace.sh
-
-# Step 3: Start with a clean log file (optional)
-rm sortrace.log
-
-# Step 4: Run the sort contest
-./sortrace.sh >> sortrace.log &
