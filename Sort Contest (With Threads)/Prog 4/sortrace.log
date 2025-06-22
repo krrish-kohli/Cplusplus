@@ -1,0 +1,42 @@
+=======Start=======
+krrishkohli
+Fri Jun 20 14:31:57 PDT 2025
+My machine has this many processors
+10
+Generating 1000000 random numbers
+Starting system sort
+
+real	0m1.140s
+user	0m1.091s
+sys	0m0.039s
+Starting my sort
+Starting bubble sort with 1000000 numbers
+Process 4 swap count:976511502
+Process 6 swap count:972862514
+Process 12 swap count:978688674
+Process 10 swap count:982829499
+Process 15 swap count:983259764
+Process 2 swap count:974002329
+Process 8 swap count:971627203
+Process 11 swap count:973147269
+Process 13 swap count:979570542
+Process 5 swap count:977470893
+Process 7 swap count:977767577
+Process 14 swap count:973963254
+Process 1 swap count:983732436
+Process 3 swap count:978977201
+Process 16 swap count:978755686
+Process 9 swap count:975446048
+Finished bubble sort on all sections.
+Output written to mysort.out
+Total Swaps: 15638612391
+
+real	0m21.151s
+user	3m0.851s
+sys	0m2.043s
+-rw-r--r--  1 krrishkohli  staff  7388776 Jun 20 14:32 systemsort.out
+-rw-r--r--  1 krrishkohli  staff  7388776 Jun 20 14:32 mysort.out
+Comparing systemsort.out to mysort.out
+All done with diff compare
+=======End=======
+Fri Jun 20 14:32:27 PDT 2025
