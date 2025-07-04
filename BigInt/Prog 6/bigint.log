@@ -1,0 +1,24 @@
+
+TestUnit:
+krrishkohli
+Fri Jul  4 12:41:56 PDT 2025
+n1(int) :         25
+s1(str) :         25
+n2(int) :         1234
+s2(str) :         1234
+n3(n2) :         1234
+fibo(12345):         12345
+fact(50) :         50
+imax :         2147483647
+big :         9.223372e18
+big.print(): 9223372036854775807
+1234/25 = 49 rem 9
+fibo(12345) = 4.008056e2579
+fact(50) = 3.041409e64
+10 + n1 = 35
+n1 + 10 = 35
+(n1 == s1)? --> true
+n1++ = ? --> before:25 after:26
+++s1 = ? --> before:26 after:26
+s2 * big = ? --> 1.138164e22
+big * s2 = ? --> 1.138164e22
