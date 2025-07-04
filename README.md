@@ -167,3 +167,30 @@ cd GoldRabbits/'Prog 5'
 c++ goldrabbits.cpp -o goldrabbits
 ./goldrabbits 4 6 3 monkey 9000 horse 45 47 -1
 ```
+
+
+### 🔹 `BigInt`  
+A C++ class-based program that implements arbitrary-precision integer arithmetic. It supports addition, subtraction, multiplication, division, modulus, and advanced operations like computing large Fibonacci numbers and factorials.
+
+**Features:**
+- Fully custom `BigInt` class with overloaded operators for arithmetic and comparisons  
+- Supports initialization from strings and integers  
+- Calculates very large Fibonacci and factorial values using recursion  
+- Handles edge cases like division by zero and overflow formatting  
+- Implements scientific notation display for large numbers  
+- Includes a `testUnit()` function to demonstrate all features  
+
+**Files:**  
+- `bigint.cpp` — Full implementation of the `BigInt` class and test driver  
+- `bigint` — Compiled executable  
+- `bigint.log` — Sample log demonstrating arithmetic, comparison, and formatting features  
+
+**Run it:**  
+```bash
+cd BigInt/'Prog 6'
+c++ bigint.cpp -o bigint
+
+rm sortrace.log # optional
+
+./bigint >> bigint.log &
+```
