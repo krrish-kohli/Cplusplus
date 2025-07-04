@@ -146,3 +146,24 @@ rm sortrace.log
 ./sortrace.sh >> sortrace.log &
 ```
 
+
+### 🔹 `GoldRabbits`  
+A C++ program that computes Fibonacci numbers using recursion with memoization. It accepts one or more command-line arguments and calculates each corresponding Fibonacci number. The program:
+
+- Uses a `map` to memoize previously computed values  
+- Accepts multiple inputs from the command line  
+- Detects and reports overflow conditions (based on signed integer behavior)  
+- Prints the full contents of the Fibonacci map when `-1` is passed  
+- Handles non-integer inputs with error messages  
+
+**Files:**  
+- `goldrabbits.cpp` — Source code with Fibonacci calculation, overflow handling, and map printing
+- `goldrabbits` — Compiled executable
+- `goldrabbits.log` — Sample log showing results for valid inputs, overflow errors, map output, and invalid input handling
+
+**Run it:**  
+```bash
+cd GoldRabbits/'Prog 5'
+c++ goldrabbits.cpp -o goldrabbits
+./goldrabbits 4 6 3 monkey 9000 horse 45 47 -1
+```
